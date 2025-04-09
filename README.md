@@ -46,6 +46,10 @@
             margin-top: 30px;
             border-radius: 8px;
         }
+        .cta:hover{
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            }
         .alerta{
             background-color: #ff0000;
             color: #fff;
@@ -74,7 +78,7 @@
         <h2>Bônus:</h2>
         <p>Swip de vendas + Script de WhatsApp sujo + VSL que lacra e lucra</p>
         <a href="cta" href="#">QUERO MENTIR E LUCRAR AGORA</a>
-        <a href="pag02"
+
     </div>
     
 </body>
