@@ -1,6 +1,6 @@
-from flask import flask, render_template, request, redirect, url_for, session
+from Flask import Flask, render_template, request, redirect, url_for, session
 
-app = flask(_name_)
+app = Flask(_name_)
 app.secret_key = 's3cr3t' #Chave secreta para seções
 
 @pp.route('/')
