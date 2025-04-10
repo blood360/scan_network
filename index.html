@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Faça seu pedido</h1>
+    <form action="/adicionar" method="POST">
+        <label for="item">Item</label>
+        <input type="text" id="item" name="item" required>
+        <label for="Quantidade">Quantidade</label>
+        <input type="text" id="quantidade" name="quantidade" min="1" required>
+        <button type="submit">adicionar</button>
+    </form>
+    <a href="/templates/pedidos.html">Ver pedidos</a>
+</body>
+</html>

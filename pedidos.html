@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus pedidos</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <h1>Meus pedidos</h1>
+    <ul>
+        {% for pedido in pedidos %}
+        <li>
+            {{pedido.item}} - quantidade: {{pedido.quantidade}}
+            <form action="/editar/{{loop.index0}}" method="POST" style="display:inline;">
+                <input type="number" name="quantidade" min="1" value="{{pedido.quantidade}}" required>
+                <button type="submit">editar</button>
+                
+            </form>
+            <a href="/excluir/{{loop.index0}}">excluir</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/templates/index.html">Fazer novo pedido</a>
+</body>
+</html>
